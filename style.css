@@ -1,0 +1,58 @@
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f0;
+  color: #33333333;
+}
+
+header {
+  background-color: #ece4ff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.gallery {
+  background-image: linear-gradient(to bottom right, #fdf6f0, #ece4ff);
+  padding: 40px 20px;
+}
+
+.gallery h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* FLEXBOX layout for gallery */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* flexbox alignment */
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.gallery-container img {
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid #dddddddd;
+  transition: transform 0.3s ease;
+}
+
+/* PSEUDO-SELECTORS */
+.gallery-container img:hover {
+  transform: scale(1.05);
+  border-color: #a27ff9;
+}
+
+.gallery-container img:nth-child(even) {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
